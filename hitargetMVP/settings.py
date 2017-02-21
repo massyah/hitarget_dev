@@ -22,7 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+SETTING = "DEBUG"
+SETTING = "PROD"
+SETTING = "PYANYWHERE"
+
 
 ALLOWED_HOSTS = ['100doutes.pythonanywhere.com']
 
@@ -114,8 +117,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-if DEBUG:
+if SETTING=="DEBUG":
     # STATIC_URL = 'http://127.0.0.1:8000/static/'
     STATIC_URL = '/static/'
+
+elif SETTING=="PYANYWHERE":
+    STATIC_URL = '/static/'
+    STATIC_ROOT = '/home/100doutes/hitarget_dev/static/'
+
 else:
     STATIC_URL = '/static/'
