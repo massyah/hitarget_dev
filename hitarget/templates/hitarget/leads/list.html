@@ -1,0 +1,11 @@
+{% extends "hitarget/base.html" %}
+   {% block title %}Lead{% endblock %}
+   {% block content %}
+<div class="row">
+
+     {% for lead in leads %}
+            {{lead.render_as_mini_card()}}
+
+     {% endfor %}
+</div>
+   {% endblock %}

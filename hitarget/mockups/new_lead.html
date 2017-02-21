@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--       have multiple "humourous titles" changing here -->
+        <title>Des leads rien que pour vous</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/my_styles.css">
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> 
+<![endif]-->
+    </head>
+
+    <body class="body-no-top">
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+        <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="master_list.html">HiTarget</a>
+                    <a href="new_lead.html"><img class="btn-main" src="add_target.png" width=72px alt=""></a> 
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="../navbar/">Mon compte</a></li>
+                        <li><a href="../navbar-static-top/">Déconnexion</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!--
+        <nav class="navbar navbar-fixed-top ">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Trouvez des opportunités, des infos...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> Go!</button>
+                </span>
+            </div> 
+        </nav>
+-->
+
+
+
+        <div class="container">
+
+            <!--           {% block headercontent %} -->
+            <div class="page-header">
+                <h1>Créer un nouveau lead<br/><small>Dites nous tout</small></h1>
+            </div>
+            <!--           {% endblock headercontent %} -->
+            <!--           {% block content %} -->
+            <form>
+                <h3>La partie visible par tous: </h3>
+                <div class="form-group">
+                    <label for="LeadTitle">Un titre</label>
+                    <input type="text" class="form-control" id="LeadTitle" aria-describedby="LeadTitleHelp" placeholder="Infrastructure d'impression laser">
+                    <small id="LeadTitle" class="form-text text-muted">Donnez un titre court, incisif et direct. 140 caractères semble être une bonne pratique</small>
+                </div>
+                <div class="form-group">
+                    <label for="LeadTitle">Un Lieu</label>
+                    <input type="text" class="form-control" id="LeadTitle" aria-describedby="LeadTitleHelp" placeholder="Paris">
+                    <small id="LeadTitle" class="form-text text-muted">Un code postal, une région, une grande ville ou un petit village: on arrivera toujours à le localiser </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="LeadDescriptionShort">Un résumé du besoin</label>
+                    <textarea class="form-control" id="LeadDescriptionShort" rows="3" placeholder="Un très bon client dans le secteur agro-alimentaire cherche à moderniser ses 250 centres d'impressions"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="LeadTitle">Les rubriques</label>
+                    <input type="text" class="form-control" id="LeadTitle" aria-describedby="LeadTitleHelp" placeholder="Informatique; Agro-alimentaire; Boulangerie ">
+                    <small id="LeadTitle" class="form-text text-muted">Commencez à taper puis sélectionnez! </small>
+                </div>
+            </form>
+            <!--           {% endblock content %} -->
+            <h3>Les infos payantes</h3>
+            <div class="form-group">
+                <label for="LeadTitle">Qui est le contact ?</label>
+                <input type="text" class="form-control" id="LeadTitle" aria-describedby="LeadTitleHelp" placeholder="Jean-Pierre Petit">
+                <label for="example-tel-input" class="col-2 col-form-label">Téléphone</label>
+                <input class="form-control" type="tel" placeholder="+33(0)6 12 34 56 78" id="example-tel-input">
+                <label for="example-mail-input" class="col-2 col-form-label">E-mail</label>
+                <input class="form-control" type="email" placeholder="jpp@world-company.com" id="example-tel-input">
+
+                <div class="form-group">
+                    <label for="LeadDescriptionShort">Le descriptif du besoin</label>
+                    <textarea class="form-control" id="LeadDescriptionShort" rows="3" placeholder="Un très bon client dans le secteur agro-alimentaire cherche à moderniser ses 250 centres d'impressions"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default pull-left">Enregistrer</button>
+                <button type="submit" class="btn btn-primary pull-right">Publier!</button>
+
+
+            </div>            
+        </div>
+
+    </body>
+
+</html>

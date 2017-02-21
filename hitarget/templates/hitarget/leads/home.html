@@ -1,0 +1,17 @@
+{% extends "hitarget/base.html" %}
+{% block headercontent %}
+<h1>Hello !</h1><hr/>
+{% endblock %}
+
+
+
+{% block maincontent %}
+    <div class="row">
+{% include "hitarget/components/welcome.html" %}
+     {% for lead in leads %}
+        {{lead}}
+     {% endfor %}
+        {% include "hitarget/components/tips.html" %}
+</div>
+   {% endblock %}
+

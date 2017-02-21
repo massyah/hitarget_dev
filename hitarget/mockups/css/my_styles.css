@@ -1,0 +1,84 @@
+.col1{
+    background: #5C7080;
+}
+.col2{
+    background: #6BC0FF;
+}
+
+.col3{
+    background: #E8AA4C;
+}
+.col4{
+    background: #FF384E;
+}
+
+.myThumb {
+    min-height: 400px;
+}
+
+
+body { 
+    padding-top: 36px; 
+    padding-bottom: 60px;
+}
+
+
+.avatar {
+    width:60px;
+    margin: 0px;
+    border: 2px solid rgba(107, 192, 255, 0.44);
+    border-radius: 5px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+
+
+.panel-heading h3 {
+    /*    white-space: nowrap;*/
+    /*    overflow: hidden;*/
+    /*    text-overflow: ellipsis;*/
+    /*    line-height: normal;*/
+    /*    width: 75%;*/
+    padding-top: 5px;
+}
+.date {
+    padding-top: 10px;   
+}
+
+
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px -6px;
+/*    font-size: 36px;*/
+    line-height: 1.33;
+    border-radius: 25px;
+}
+.btn-circle.btn-xl {
+    width: 72px;
+    height: 72px;
+    /*  padding: 10px 16px;*/
+/*    font-size: 36px;*/
+    /*  line-height: 1.33;*/
+    border-radius: 35px;
+}
+
+
+.btn-main { position: fixed; bottom: 0px; right: 40%; }
+
+
+.body-no-top {
+    padding-top: 0px;
+}

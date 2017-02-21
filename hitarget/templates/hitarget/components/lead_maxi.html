@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+        <div class="panel panel-default">
+            <!--<div class="panel-heading">-->
+                <!--{{lead.main_title}}-->
+                <!--<div class="clearfix"></div>-->
+            <!--</div>-->
+            <div class="panel-body">
+                <h3>De quoi ça parle ?</h3>
+                <p>Dans le domaine {{lead.category|title}}</p>
+                <p>{{lead.description_short}}</p>
+
+                <h3>Quand?</h3>
+                <ul>
+                    <li>Info publiée le {{lead.date_publish|date:"D d M Y"}}
+                    <li>Valable pendant {{lead.expires_in_full|lower}}
+                </ul>
+
+                <h3>A propos du prospect</h3>
+                <ul>
+                <li>Est basé à {{lead.location}}
+                <li>En ce moment: {{lead.prospect_maturity}}
+                </ul>
+
+                <h3>A propos de l'auteur</h3>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object avatar" width="60px" src="{{lead.author_avatar}}"
+                             alt="{{lead.author_avatar_alt}}"/>
+
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{lead.author | title}}</h4>
+                        <ul>
+                            <li>est sur HiTarget depuis 3 semaines
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <small class="pull-left date">&nbsp;{{lead.relative_date}}</small>
+        </div>
+        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+            {% for act in lead.action_buttons_maxi %}
+            <a href="{{act.url}}" class="btn btn-default {{act.additional_class}}" role="button"><i
+                    class="glyphicon {{act.icon}}"></i>{{act.text}}</a>
+            {% endfor %}
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+

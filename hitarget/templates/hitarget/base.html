@@ -1,0 +1,80 @@
+{% load static %}
+{% load bootstrap3 %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--       have multiple "humourous titles" changing here -->
+        <title>Des leads rien que pour vous</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static "hitarget/css/bootstrap.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "hitarget/css/my_styles.css" %}">
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    </head>
+
+    <body >
+        <script src="{% static "hitarget/js/jquery-3.1.1.js" %}"></script>
+        <script src="{% static "hitarget/js/bootstrap.js" %}"></script>
+
+        <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/leads">HiTarget</a>
+                    <a href="/leads"><img class="btn-main" src="{% static "hitarget/assets/add_target.png" %}" width=72px alt=""></a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/leads/add">Poster un nouveau lead</a></li>
+                        <li><a href="#about">A propos</a></li>
+                        <!--<li><a href="#contact">Contactez-nous</a></li>-->
+                        <!--<li><a href="#contact">Rejoignez-nous</a></li>-->
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="../navbar/">Mon compte</a></li>
+                        <li><a href="../navbar-static-top/">Déconnexion</a></li>
+                        <li><a href="/leads">Mes nouvelles</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-fixed-top ">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Trouvez des opportunités, des infos...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> Go!</button>
+                </span>
+            </div>
+        </nav>
+
+
+
+
+        <div class="container">
+        {% block headercontent %}
+            <!--header content start-->
+            <h1>header content is here !</h1>
+            <!--header content end-->
+        {% endblock %}
+                {% block maincontent %}
+            <!--main content start-->
+            <h1> main content block </h1>
+            <!--main content end-->
+            {% endblock %}
+        </div>
+    </body>
+</html>

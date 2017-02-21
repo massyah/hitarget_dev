@@ -1,0 +1,22 @@
+{% extends "hitarget/base.html" %}
+{% block headercontent %}
+<h1>Postez votre lead</h1>
+{% endblock %}
+
+{% block maincontent %}
+<div>
+<form action="/leads/add" method="post">
+       {{ add_lead_form.as_p }}
+       {% csrf_token %}
+       <p><input type="submit" value="Poster ce lead"></p>
+  </form>
+</div>
+
+<!--<form action="/leads/add" method="post">-->
+<!--{{ add_lead_form.as_p }}-->
+<!--{% csrf_token %}-->
+<!--<p><input type="submit" value="Poster ce lead"></p>-->
+<!--</form>-->
+<!--</div>-->
+
+{% endblock %}

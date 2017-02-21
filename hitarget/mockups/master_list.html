@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--       have multiple "humourous titles" changing here -->
+        <title>Des leads rien que pour vous</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/my_styles.css">
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> 
+<![endif]-->
+    </head>
+
+    <body>
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+        <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="master_list.html">HiTarget</a>
+                    <a href="new_lead.html"><img class="btn-main" src="add_target.png" width=72px alt=""></a> 
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="../navbar/">Mon compte</a></li>
+                        <li><a href="../navbar-static-top/">Déconnexion</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-fixed-top ">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Trouvez des opportunités, des infos...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> Go!</button>
+                </span>
+            </div> 
+        </nav>
+
+
+
+        <div class="container">
+
+            <!--           {% block headercontent %} -->
+
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                Votre compte est désormais actif! 
+            </div>
+            <div class="page-header">
+                <h1>Hello Olivier! <small>Voici des nouvelles fraîches rien que pour vous</small></h1>
+            </div>
+            <!--           {% endblock headercontent %} -->
+            <!--           {% block content %} -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Bienvenue! </div>
+                        <div class="panel-body">
+                            Bienvenue sur HiTarget! Voudriez-vous: 
+                            <ul>
+                                <li><a href="#">Rajoutez des infos sur mon compte</a></li>
+                                <li><a href="#">Comprendre le principe</a></li>
+                                <li><a href="new_lead.html">Postez votre premier lead ! </a></li>
+                                <li><a href="#">Déterminez vos secteurs d'activités et nous laisser vous trouvez des leads</a></li>
+                                <li><a href="#">Utilisez la barre de recherche pour trouver des leads</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title pull-left">Les 6 règles d'or pour des leads qui partent</h3>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object avatar" width="60px" src="http://lorempixel.com/60/60/people" alt="arthur-g-avatar"/>
+
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Quelques conseils!</h4>
+                                    <p>À votre avis, qu'est ce qui fait que des leads partent et d'autres non? L'avis de Yacine B., directeur commercial chez ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="pull-left date">&nbsp;Aujourd'hui</small>
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-heart-empty"></i>
+                            </button>       
+                            <a href="#" class="btn btn-info btn-xs pull-right">Voir plus</a>
+                        </div>
+                        <div class="clearfix"></div>  
+                    </div>
+                </div>
+
+                <!--               call to action -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title pull-left">Une image!</h3>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p>Saviez-vous que les auteurs ayant choisi une image pour leur profil vendent jusqu'à 47% de leads en plus ? </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </button>
+                            <button type="button" class="btn btn-default btn-info">
+                                J'y vais!
+                            </button>
+                        </div>
+                        <div class="clearfix"></div>  
+                    </div>
+                </div>
+                <!-- /call to action -->
+
+                <!--                sample lead-->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+
+                            250+ PC Portables
+                            <div class="clearfix"></div>                 
+
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object avatar" width="60px" src="https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg" alt="arthur-g-avatar"/>
+
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Tout nouveau!</h4>
+                                    <p>Arthur G. vient de poster un nouveau lead dans le domaine de l'informatique, pour une société basé en Charente. Intéréssé ?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="pull-left date">&nbsp;le 12.02.20017</small>
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">
+                                <i class=" glyphicon glyphicon-remove"></i>
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class="glyphicon glyphicon-heart-empty"></i>
+                            </button>       
+                            <a href="#" class="btn btn-info btn-xs pull-right">Voir plus</a>
+                        </div>
+                        <div class="clearfix"></div>                           
+                    </div>
+                </div>
+
+
+
+
+                <!--               new follower -->
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+
+                            Il vous aime!
+                            <div class="clearfix"></div>                 
+
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object avatar" width="60px" src="http://lorempixel.com/60/60/people" alt="patrick-m-avatar"/>
+
+                                </a>
+                                <div class="media-body">
+                                    <p>Patrick se tient désormais informé de vos leads!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="pull-left date">&nbsp;Hier</small>
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <a href="#" class="btn btn-info btn-xs pull-right">Super!</a>
+                        </div>
+                        <div class="clearfix"></div>                           
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Vendu!
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object avatar" src="http://lorempixel.com/60/60/people" alt="Image">
+                                </a>
+                                <div class="media-body">
+                                    <p>Anahita Z. souhaite acheter votre lead XXXXXX</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <small class="pull-left date">&nbsp;Le mardi 12.02.20017</small>
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">Refuser</button>
+                            <a href="#" class="btn btn-danger">Accepter</a>
+                        </div>
+                        <div class="clearfix"></div>  
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Vendu!
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object avatar" src="http://lorempixel.com/60/60/people" alt="Image">
+                                </a>
+                                <div class="media-body">
+                                    <p>Arthur G. souhaite acheter votre lead XXXXXX</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <small class="pull-left date">&nbsp;Le mardi 12.02.20017</small>
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">Refuser</button>
+                            <a href="#" class="btn btn-danger">Accepter</a>
+                        </div>
+                        <div class="clearfix"></div>  
+                    </div>
+
+                </div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            Votre lead "Infrastructure HP" ne s'est pas vendu
+                        </div>
+                        <div class="panel-body">Malheuresement, aucun des 373 visiteurs n'a voulu l'acquérir</div>
+                        <div>
+                            <small class="pull-left date">&nbsp;Il y a 3 jours</small>
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">Dommage...</button>
+                            <a href="#" class="btn btn-danger">Relancer!</a>
+                        </div>
+                        <div class="clearfix"></div>  
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <i class="glyphicon glyphicon-signal"></i>&nbsp; De nouvelles visites sur vos leads!
+                        </div>
+                        <div class="panel-body">
+                            Depuis le 10.02.2017 : 
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Lead</th>
+                                        <th>Visites</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Fiches réseaux</a></td>
+                                        <td>+23 <i class="glyphicon glyphicon-fire"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Imprimantes design</a></td>
+                                        <td>+3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                        <div class="btn-group btn-group-sm pull-right" role="group" aria-label="...">
+                            <a href="#" class="btn btn-danger">Voir plus de stats</a>
+                        </div>
+                        <div class="clearfix"></div>  
+
+
+
+                    </div>
+                </div>
+                <!--           {% endblock content %} -->
+            </div> 
+        </div>
+
+    </body>
+
+</html>

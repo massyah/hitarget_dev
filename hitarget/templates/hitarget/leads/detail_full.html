@@ -1,0 +1,18 @@
+{% extends "hitarget/base.html" %}
+
+
+{% block headercontent %}
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                Ce lead est à vous !
+            </div>
+<h3>{{lead.title}}</h3>
+{% endblock %}
+
+
+{% block maincontent %}
+<!--<div class="row">-->
+{{lead_html}}
+<!--</div>-->
+{% endblock %}
+
