@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.urls import reverse
 from django.utils import timezone
+from django.utils.translation import ugettext as _
 
 
 # Create your models here.
@@ -20,7 +21,8 @@ class Category(models.Model):
 
 class Company(models.Model):
     title = models.CharField(max_length=250)
-    sector = models.ForeignKey(Category, related_name='companies')
+    sector = models.CharField(max_length=250)
+    sector_entity = models.ForeignKey(Category, models.SET_NULL, blank=True, null=True, related_name='companies')
 
     def __str__(self):
         return "%s -- %s" % (self.title, self.sector)
@@ -28,7 +30,8 @@ class Company(models.Model):
 
 class Contact(models.Model):
     full_name = models.CharField(max_length=250)
-    company = models.ForeignKey(Company, related_name='contacts')
+    company = models.CharField(max_length=250)
+    company_entity = models.ForeignKey(Company, models.SET_NULL, blank=True, null=True, related_name='contacts')
 
     def __str__(self):
         return "%s (%s)" % (self.full_name, self.company)
@@ -73,23 +76,48 @@ class Lead(Card):
         ('expired', 'Expiré'),
         ('acquired', 'Déjà acquis'),
     )
-    title = models.CharField(max_length=250)
-    slug = models.SlugField(max_length=250,
-                            unique=True)
-    author = models.ForeignKey(User,
-                               related_name='leads')
-    description_short = models.TextField()
-    description_full = models.TextField()
-    date_publish = models.DateTimeField(default=timezone.now)
+    # internal
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
-    expires_in = models.CharField(max_length=2, choices=EXPIRES_IN, default='1w')
-    status = models.CharField(max_length=10, choices=STATUS, default='validating')
-    maturity_level = models.CharField(max_length=10, choices=MATURITY_LEVELS, default='inform')
+    slug = models.SlugField(max_length=250, unique=True)
+    status = models.CharField(max_length=10, choices=STATUS, default='validating',verbose_name=_("État"))
+    expires_in = models.CharField(max_length=2, choices=EXPIRES_IN, default='1w',verbose_name=_("Durée de validité"))
+
+    # public visbility
+    date_publish = models.DateTimeField(default=timezone.now,verbose_name=_("Date de publication"))
+    title = models.CharField(verbose_name=_("Titre du lead"), max_length=250)
+    author = models.ForeignKey(User, verbose_name=_("Auteur"),related_name='leads')
+    description_short = models.TextField(verbose_name=_("Résumé du besoin"))
+    maturity_level = models.CharField(verbose_name=_("Niveau de maturité"),max_length=10, choices=MATURITY_LEVELS, default='inform')
     date_expired = models.DateTimeField()
-    category = models.ForeignKey(Category, related_name="leads")
-    contact = models.ForeignKey(Contact, related_name="leads", null=True)
-    location = models.ForeignKey(Location, related_name="leads", null=True)
+
+    # paywall
+    description_full = models.TextField(verbose_name=_("Description complète"))
+    # TODO substitute by tagit django model
+    category = models.CharField(verbose_name=_("Les rubriques"),max_length=220)
+    category_entity = models.ForeignKey(verbose_name=_("Rubriques liées"),to=Category, related_name="leads", on_delete=models.SET_NULL, blank=True,
+                                        null=True)
+
+    # TODO denormalize entries
+    # contact = models.ForeignKey(Contact, related_name="leads", null=True)
+    # location = models.ForeignKey(Location, related_name="leads", null=True)
+
+    # TODO longueur maximale adresse postale francaise
+    location = models.CharField(verbose_name=_("Lieu"),max_length=160)
+    location_entity = models.ForeignKey(verbose_name=_("Lieux liés"),to=Location, on_delete=models.SET_NULL, blank=True, null=True, related_name="leads")
+
+    contact_name = models.CharField(verbose_name=_("Nom du contact"),max_length=120)
+    # TODO add a french phone number validator
+    # TODO add an auto formatter
+    # TODO add a phone classifier : mobile, etc.
+    contact_phone_number = models.CharField(verbose_name=_("Son téléphone"),max_length=120)
+    contact_email = models.EmailField(verbose_name=_("Son email"))
+
+    # TODO add an auto-completion based on dynamic thesaurus, specific
+    # E/s index
+    contact_company = models.CharField(verbose_name=_("La société"),max_length=120)
+
+    contact_company_entity = models.ForeignKey(verbose_name=_("Société liée"),to=Company, on_delete=models.SET_NULL, blank=True, null=True, related_name="leads")
 
     class Meta:
         ordering = ('-date_publish',)

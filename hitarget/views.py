@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.shortcuts import render, get_object_or_404
 from django.template import loader
+import pprint as pp
 from .models import Lead
 from .forms import AddLeadForm
 
@@ -79,6 +80,7 @@ def lead_full(request, lead):
 
 def add_lead(request):
     if request.method == "POST":
+        pp.pprint("Received POST data %s"%(request.POST))
         add_lead_form = AddLeadForm(data=request.POST)
         if add_lead_form.is_valid():
             print("is valid")

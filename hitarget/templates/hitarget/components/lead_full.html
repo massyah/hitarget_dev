@@ -7,7 +7,7 @@
             <!--</div>-->
             <div class="panel-body">
                 <h3>De quoi ça parle ?</h3>
-                <p>Dans le domaine {{lead.category|title}}</p>
+                <p>Opportunité dans le domaine {{lead.category|title}}</p>
                 <p>{{lead.description_short}}</p>
 
                 <h3>Quand?</h3>
@@ -25,8 +25,19 @@
                 <h3>Les infos</h3>
                 {{lead.description_full}}
                 <h4>Le contact</h4>
-                <p>{{lead.contact.full_name}}, de la société {{lead.contact.company|title}}</p>
-                <p>Où le trouver: {{lead.location}}</p>
+                <p>{{lead.contact_name | title}}, de la société {{lead.contact_company|title}}</p>
+                <p>Où le trouver: {{lead.location | title}}</p>
+                <p>Pour le contacter :</p>
+                <ul>
+
+                {% if lead.contact_phone_number %}
+                    <li>Téléphone: {{lead.contact_phone_number}}</li>
+                {% endif %}
+
+                {% if lead.contact_email %}
+                    <li>E-mail: {{lead.contact_email}}</li>
+                {% endif %}
+                </ul>
             </div>
 
 

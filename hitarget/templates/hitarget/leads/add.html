@@ -1,15 +1,21 @@
 {% extends "hitarget/base.html" %}
+
+{% load bootstrap3 %}
+{% load static %}
 {% block headercontent %}
 <h1>Postez votre lead</h1>
 {% endblock %}
 
 {% block maincontent %}
 <div>
-<form action="/leads/add" method="post">
-       {{ add_lead_form.as_p }}
-       {% csrf_token %}
-       <p><input type="submit" value="Poster ce lead"></p>
-  </form>
+    <form action="/leads/add" method="post">
+      {% bootstrap_form add_lead_form %}
+        {% csrf_token %}
+
+    <p>                <button class="btn btn-default pull-left">Enregistrer</button>
+        <input type="submit" class="btn btn-primary pull-right" value="Publier!">
+
+    </form>
 </div>
 
 <!--<form action="/leads/add" method="post">-->

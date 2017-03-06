@@ -23,8 +23,8 @@ SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # SETTING = "PROD"
-SETTING = "PYANYWHERE"
-# SETTING = "DEBUG"
+# SETTING = "PYANYWHERE"
+SETTING = "DEBUG"
 
 
 ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1']
