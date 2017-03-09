@@ -1,0 +1,238 @@
+# savoir-faire 
+Affûtage
+Appareillage basse tension
+Appareillage de commutation et de distribution
+Appareillage haute tension
+Armoires, coffrets, capotages spécifiques
+Assemblage des métaux par collage
+Assemblage par collage, rivetage
+Bobinage transfo, self, moteur
+Bobinage électronique grande série
+Bobinage électronique petite série
+Brunissage
+Bâtis mécano-soudés
+CAO de circuits imprimés
+Carrosserie industrielle
+Chaudronnerie alliages légers
+Chaudronnerie cuivre & dérivés
+Chaudronnerie fine ou de précision
+Chaudronnerie inox
+Chaudronnerie moyenne
+Chaudronnerie métaux spéciaux
+Chaudronnerie plastique
+Chaudronnerie sous pression
+Chromage dur
+Chromisation
+Cintrage
+Circuits imprimés 1 ou 2 faces
+Circuits imprimés multicouches
+Circuits imprimés à trous métallisés, souples, flexirigides
+Collage des plastiques
+Contrôle, essai de moules et outillages
+Contrôle, essai, étalonnage d'équipements de mesure, de contrôle et d'essai
+Contrôle-essais en fonderie
+Contrôles-essais en mécanique
+Contrôles-essais en plasturgie
+Contrôles-essais en traitement de surface
+Contrôles-essais en traitement thermique
+Contrôles-essais en travaux de presse
+Contrôles-essais en tôlerie-chaudronnerie-tuyauterie
+Contrôles-essais en électronique
+Contrôles-essais en électrotechnique
+Cuves, citernes, silos
+Câblage d'armoires de commande
+Câblage de tiroirs, baies électroniques
+Câbles, torons, faisceaux et cordons
+Céramique industrielle
+Design industriel
+Documentation technique
+Décapage chimique
+Décapage par abrasion ou par grenaillage
+Décolletage
+Découpage fin
+Découpage, emboutissage sur presse < 100 T
+Découpage, emboutissage sur presse >= 100 T
+Découpage, emboutissage sur presse cadence rapide
+Découpe au jet d'eau
+Découpe au laser
+Découpe au plasma
+Ebarbage
+Ebavurage chimique ou electrolytique
+Ebavurage, polissage, microbillage
+Electricité - Electronique - Automatismes
+Electro-érosion
+Emboutissage profond
+Equipements de convoyage et de manutention
+Equipements de génie aéraulique et climatique
+Equipements hydrauliques
+Equipements pneumatiques
+Etudes - Conception
+Etudes d'emballages techniques spécifiques
+Etudes d'équipements d'automatisation et de process
+Etudes d'équipements électroniques grand public
+Etudes d'équipements électroniques professionnels
+Etudes de machines spéciales
+Etudes de moules et d'outillages
+Etudes en fonderie
+Etudes en plasturgie-caoutchouc-composites
+Etudes en travaux de presses
+Etudes en tôlerie, chaudronnerie, tuyauterie
+Etudes en électricité-électronique
+Etudes mécaniques
+Extrusion caoutchouc
+Extrusion plastique
+Extrusion-soufflage
+Fabrication de circuits hybrides
+Fabrication de composants électroniques spécifiques
+Façonnage du fil
+Filières d'extrusion
+Fonderie acier grande série
+Fonderie acier petite ou moyenne série
+Fonderie alliages ferreux grande série
+Fonderie alliages ferreux petite et moyenne série
+Fonderie alliages légers grande série
+Fonderie alliages légers petite ou moyenne série
+Fonderie alliages légers sous pression
+Fonderie aluminium grande série
+Fonderie aluminium petite et moyenne série
+Fonderie basse pression
+Fonderie bronze
+Fonderie cire perdue
+Fonderie coquilles
+Fonderie
+Fonderie fonte grande série
+Fonderie fonte petite ou moyenne série
+Fonderie magnésium
+Fonderie métaux cuivreux
+Fonderie métaux rares
+Fonderie par centrifugation
+Fonderie sous vide
+Fonderie zamak
+Forgeage, matriçage
+Formage des plastiques
+Formage des plastiques transparents
+Frittage
+Galvanisation
+Gravure industrielle
+Grosse chaudronnerie
+Injection caoutchouc
+Injection de mousse polyuréthane
+Injection des plastiques
+Insertion automatique de composants
+Insertion manuelle de composants
+Installations téléphoniques et courants faibles
+Installations électriques de locaux professionnels
+Logiciels de contrôle-commande
+Machines spéciales
+Machines tournantes spécifiques
+Magnétoformage
+Maintenance de matériel aéraulique et climatique
+Maintenance de moteurs thermiques
+Maintenance
+Maintenance en tôlerie-chaudronnerie-tuyauterie
+Maintenance mécanique
+Maintenance électrique et électrotechnique
+Maintenance électronique
+Maintenance électrotechnique
+Maquettes
+Marquage à chaud
+Matrices, outils de forges
+Menuiserie métallique, serrurerie
+Micro-mécanique
+Microélectronique
+Mise en oeuvre des matériaux composites
+Modelage
+Montage et assemblage sur site
+Montage mécaniques
+Moulage caoutchouc par compression
+Moulage plastique par compression
+Moulage polyuréthane
+Moule pour fonderie cire perdue
+Moules pour composites
+Moules pour céramique
+Moules pour injection plastique ou caoutchouc
+Moules pour métaux sous pression
+Moules pour thermoformage
+Moules pour verrerie
+Moules à béton
+Mécanique de précision
+Mécanique
+Mécanique grande dimension
+Mécanique générale grande série
+Mécanique générale petite ou moyenne série
+Métallisation
+Optronique
+Organes de transmission, engrenages
+Outillage de rotomoulage
+Outillages de fabrication et de contrôle
+Outillages à main
+Outillages, moules et modèles
+Outils de coupe
+Outils de presses
+Outils tranchants
+Oxycoupage
+Peinture
+Peinture sur site
+Perçages profonds, forage
+Phosphatation
+Pièces issues de déformation à froid
+Plastiques - Caoutchouc - Composites - Céramiques - Verre
+Prototypage rapide
+Rechargement
+Report à plat de composants CMS
+Repoussage, fluotournage
+Ressorts spécifiques
+Revêtement époxy
+Revêtements : plastification, téflon, rilsan,?
+Robinetterie industrielle spécifique
+Robotique, automatisme
+Rotomoulage
+Réalisation d' équipements d'automatisation et de process
+Réalisation d'ensembles électroniques grand public
+Réalisation d'ensembles électroniques professionnels
+Rénovation de machines
+Soudage au laser
+Soudage au plasma
+Soudage des plastiques
+Soudage par bombardement électronique
+Soudage à la vague
+Structures métalliques
+Surmoulage, inserts, adhérisation
+Sérigraphie
+Tampographie
+Tests CEM
+Tests d'ensembles, sous-ensembles
+Tests de cartes
+Tests de câblage
+Tests sous enceinte climatique
+Thermoformage
+Thermolaquage
+Traitement de surface des plastiques et composites
+Traitement thermique classique
+Traitement thermique de grandes dimensions
+Traitement thermique sous atmosphère
+Traitement thermique sous vide
+Traitements chimiques
+Traitements thermiques et de surfaces
+Traitements électrochimiques, anodisation
+Traitements électrolytiques
+Travail du tube et des profilés
+Travaux de presses
+Tréfilerie, câbles métalliques
+Turbines spécifiques
+Tuyauterie industrielle
+Tuyauterie inox
+Tuyauterie nucléaire
+Tuyauterie sous pression
+Tôlerie - Chaudronnerie
+Tôlerie alliages légers
+Tôlerie cuivre et dérivés
+Tôlerie en CN
+Tôlerie fine ou de précision
+Tôlerie inox
+Tôlerie moyenne
+Tôlerie métaux spéciaux
+Usinage des plastiques
+Usinage en CN
+Usinage grande vitesse UGV
+Visserie, boulonnerie, rondelles spécifiques

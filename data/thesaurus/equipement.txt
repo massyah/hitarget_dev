@@ -1,0 +1,291 @@
+# equipement
+
+Affûteuse
+Affûteuse à CN
+Aléseuse
+Aléseuse à CN
+Analyseur de spectre
+Appareil à courants de Foucault
+Appareils de contrôle aux ultrasons
+Autoclave
+Autre équipement de conception
+Autre équipement de production de moules et outillages
+Autre équipement de production en electricité-électronique
+Autre équipement de production en fonderie
+Autre équipement de production en mécanique
+Autre équipement de production en plasturgie, caoutchouc, …
+Autre équipement de production en tolerie-chaudronnerie
+Autre équipement de production en travaux de presse
+Autre équipement de traitement thermique ou de surface
+Bain de décapage chimique
+Bain de dégraissage par solvant
+Bain mort ou tonneau pour dépôt métallique par électrolyse
+Banc d'essai de pression, de fuite
+Banc d'oxycoupage
+Banc d'oxycoupage par copiage ou CN
+Banc d'usinage et/ou découpe au jet d'eau
+Banc d'usinage et/ou découpe au laser
+Banc d'usinage et/ou découpe au plasma
+Banc d'usinage et/ou découpe par faisceau d'électrons
+Banc d'équilibrage
+Banc de magnétoscopie
+Banc de mesures et d'essais de comportement dynamique
+Banc de radiographie et radioscopie aux rayons gamma
+Banc de radiographie et radioscopie aux rayons X
+Banc de soudage des métaux par induction
+Banc de soudage laser
+Banc de soudage par bombardement électronique
+Banc de soudage par ultrasons
+Banc de soudage plasma
+Banc de test de cartes électronique
+Banc de test de circuits imprimés
+Banc de test de câbles et faisceaux
+Brocheuse
+Cabine de peinture liquide
+Cabine de peinture poudre
+Caroussel automatisé - robotisé
+Carroussel de rotomoulage
+Centre d'usinage grande vitesse à CN (UGV)
+Centre d'usinage horizontal à CN
+Centre d'usinage vertical à CN
+Chaine mécanisée d'enrobage
+Chambre froide
+Chantier automatique
+Chantier mécanisé grande dimension
+Chantier semi-mécanisé
+Chaudronnerie plastique
+Chaîne d'usinage chimique
+Chaîne d'usinage électrochimique / électrolytique
+Chaîne de cataphorèse
+Chaîne peinture robotisée
+Cintreuse de tubes et profilés
+Cintreuse à CN
+Cisaille
+Cisaille CN
+Colonne de mesure
+Colorimètre
+Conditionneuse sous blister
+Contrôle détails
+Contrôle non destructif CND
+Contrôle standard et divers
+Cubilot
+Cuve de nettoyage aux ultrasons
+Cuve de revêtement métallique au trempé
+Cuve de traitement chimique, brunissage, chromatation, …
+Cuve de traitement électrolytique, anodisation,…
+Cuve pour revêtement non métallique au trempé
+DAO, CAO, FAO, CFAO,…
+Durométre
+Ebavureuse électrolytique
+Electricité - Electronique - Automatismes détails
+Enceinte climatique
+Enceinte de test aux agents extérieurs, température, corrosion…
+Endoscope, Fibroscope
+Equipement de test CEM
+Equipement de vulcanisation
+Equipement pour déssouder
+Equipements de test d'ensembles ou sous-ensembles électroniques
+Etalons
+Etudes - Conception détails
+Etuve
+Extrudeuse de profilés
+Extrudeuse pour caoutchouc
+Extrudeuse pour plastique
+Extrudeuse souffleuse pour plastique
+Extrudeuse à chaud
+Fonderie de précision
+Fonderie détails
+Four de cuisson
+Four de cuisson pour revêtement non métallique
+Four de frittage
+Four de fusion
+Four de fusion automatique
+Four de maintien
+Fraiseuse d'engrenages
+Fraiseuse multibroche
+Fraiseuse universelle
+Fraiseuse à CN
+Fraiseuse à détourer
+Fraiseuse à reproduire
+Gelcoateuse
+GPAO
+Grenailleuse, shot peaning
+Grignoteuse CN
+Grignoteuse, grugeuse
+Installation d'adhérisation métal/caoutchouc, métal/plastique
+Installation d'enrobage, surmoulage
+Installation de dépôt métallique sous-vide, évaporateur
+Installation de moulage de céramique
+installation de régénération des plastiques
+Installation de sérigraphie
+Installation de tampographie
+Installation pour imprégnation sous vide
+Interféromètre, réflectomètre, radiomètre
+Laboratoire d'analyses chimiques
+Ligne de pose CMS
+Lignes de pultrusion des plastiques renforcés, composites
+Machine d'aide à l'insertion des composants
+Machine d'enrobage
+Machine d'usinage ou de découpe des plastiques
+Machine d'électro-érosion à fil
+Machine d'électro-érosion à électrode
+Machine de contrôle des engrenages
+Machine de duplication par coulée sous vide
+Machine de frittage de poudre
+Machine de magnétoformage
+Machine de projection polyester
+Machine de soudage par points et molettes
+Machine de stéréolithographie
+Machine de traction/compression/flexion
+Machine dinsertion automatique de composants électroniques
+Machine spéciale de soudage
+Machine thermojet 3D cire
+Machine transfert
+Machine à coquiller
+Machine à couper et cambrer les composants
+Machine à enroulement filamentaire de composite
+Machine à marquer fils et câbles
+Machine à mesurer tridimensionnelle
+Machine à mouler mécaniquement
+Machine à mouler par injection
+Machine à noyaux
+Machine à programmer
+Machine à retreindre, à étirer
+Machine à rouler les filets
+Machine à sable
+Machine à souder à la vague
+Machine à usiner par ultrasons
+Machines à bois
+Marteau pilon double frappe
+Marteau pilon ou mouton
+Mesure d'épaisseur de parois, de revêtements
+Mesure dimensionnelle classique
+Mesures thermiques
+Microanalyse par MEB ou MASE
+Microbilleuse
+Microscope optique
+Mortaiseuse
+Mouton de Charpy
+Mécanique détails
+Métallographie
+Métalloscopie
+Outillages, moules et modèles détails
+Perceuse multibroche
+Perceuse radiale
+Perceuse à CN
+Perceuse-aléseuse
+Perceuse-aléseuse à CN
+Pistolet pour revêtement métallique
+Pistolet pour revêtement non métallique
+Planeuse à galets
+Plastiques - Caoutchouc - Composites - Céramiques - Verre détails
+Poche de coulée
+Pointeuse ou semi-pointeuse
+Poinçonneuse
+Poinçonneuse CN
+Polisseuse
+Polisseuse à CN
+Polisseuse à CN pour plastiques
+Poste d'imprégnation des composites, plastiques renforcés
+Poste d'insertion manuelle de composants électroniques
+Poste d'ébarbage
+Poste d'ébavurage manuel
+Poste d'électrolyse au tampon
+Poste de brasage
+Poste de collage des métaux
+Poste de collage des plastiques
+Poste de câblage de sous-ensembles
+Poste de câblage pieuvre grande dimension
+Poste de câblage pieuvre petite dimension
+Poste de drapage de composite, stratification
+Poste de moulage compression pour plastique renforcé
+Poste de moulage contact pour plastique renforcé
+Poste de parachèvement
+Poste de rechargement
+Poste de soudage des plastiques, ultrasons, HF,…
+Poste de soudage manuel de composants
+Poste de soudage oxyacétylènique pour acier
+Poste de soudage oxyacétylènique pour alliage léger
+Poste de soudure TIG-MIG
+Poste de soudure à l'arc sous argon
+Poste manuel de report à plat de CMS
+Presse compression / transfert pour plastique ou composite
+Presse compression pour plastique ou composite
+Presse d'emboutissage profond
+Presse d'injection caoutchouc
+Presse d'injection de barreaux de coulée
+Presse d'injection plastique bimatière
+Presse d'injection pour modèle en cire
+Presse d'injection pour plastique
+Presse de découpe emboutissage de forte puissance
+Presse de découpe emboutissage à grande cadence
+Presse hydraulique
+Presse hydraulique pour forgeage ou estampage
+Presse mécanique pour forgeage ou estampage
+Presse plieuse
+Presse plieuse à CN
+Presse pour découpage fin
+Presse pour marquage à chaud
+Presse pour matriçage à chaud
+Presse pour matriçage à froid
+Presse transfert pour plastique ou caoutchouc
+Presse à découper, emboutir
+Presse à emboutir spéciale : caoutchouc, liquide…
+Presse à fritter
+Projecteur de profil
+Raboteuse, étau-limeur
+Raboteuse-fraiseuse
+Rainureuse
+Rectifieuse cylindrique extérieure
+Rectifieuse cylindrique intérieure
+Rectifieuse cylindrique universelle inter/exter
+Rectifieuse de profil (filetage, engrenage, cannelure)
+Rectifieuse plane
+Rectifieuse sans centre
+Ressuage
+Riveteuse
+Robot manipulateur
+Rodeuse
+Rouleuse cintreuse de tôles
+Rouleuse croqueuse
+Rouleuse, profileuse de tubes et profilés à froid
+Rugosimètre
+Sablerie automatique
+Sables spéciaux
+Sableuse en phase humide
+Sableuse à sec
+Salle blanche
+Scie de débit à CN
+Sertisseuse de cosses
+Spectromètre IR
+Station CAO pour circuits imprimés
+Système de développement pour microprocesseur
+Table de pliage des plastiques
+Tailleuse d'engrenages
+Taraudeuse
+Taraudeuse multibroche
+Taraudeuse à CN
+Testeur de composants électroniques
+Thermoformeuse
+Tonneau d'ébavurage
+Torche à plasma
+Tour de grande dimension
+Tour parallèle
+Tour pour micromécanique
+Tour semi-automatique ou automatique
+Tour spécial, à banc rompu, à fosse
+Tour vertical
+Tour vertical à CN
+Tour à bobiner
+Tour à CN
+Tour à copier
+Tour à course longue pour forage
+Tour à décolleter
+Tour à décolleter CN
+Tour à fileter
+Tour à fluotourner
+Tour à repousser les métaux
+Traitements thermiques et de surfaces détails
+Travaux de presses détails
+Tronçonneuse
+Tôlerie - Chaudronnerie détails

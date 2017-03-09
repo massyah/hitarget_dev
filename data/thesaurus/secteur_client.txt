@@ -1,0 +1,71 @@
+# secteur client 
+Administration et services publics
+Agriculture, viticulture, forêts
+Autres clientèles (non Industrielles)
+Autres secteurs
+Boulangerie et pâtisserie
+Bureaux d'études et cabinets d'ingénierie
+Bâtiment et travaux publics
+Clientèles diversifiées toutes industries
+Commerce de gros, revendeurs, distributeurs
+Construction automobile
+Construction aéronautique et spatiale
+Construction de véhicules utilitaires
+Construction ferroviaire
+Construction navale
+Extraction, préparation de minerai de fer
+Extraction, préparation de minerais non ferreux
+Fabricants d'instruments et de matériels de précision
+Fabricants d'objets d'art ou de décoration
+Fabricants d'équipement ménager
+Fabricants d'équipements de sport, loisirs, jouets
+Fabricants de bateaux de plaisance
+Fabricants de cycles, motocycles
+Fabricants de machines agricoles
+Fabricants de machines spéciales
+Fabricants de machines-outils et robotique
+Fabricants de matériel aéraulique, thermique et frigorifique
+Fabricants de matériel de bureau et traitement de l'information
+Fabricants de matériel hydraulique, pneumatique
+Fabricants de matériel pour l'industrie nucléaire
+Fabricants de matériel électrique
+Fabricants de matériel électronique grand public
+Fabricants de matériel électronique professionnel
+Fabricants de matériels de manutention et connexes
+Fabricants de matériels de télécommunications
+Fabricants de moteurs industriels
+Fabrication de boissons, alcools
+Fabrication de produits alimentaires
+Fonderie
+Imprimerie, presse, édition
+Industrie chimique de base
+Industrie de l'ameublement
+Industrie de l'armement
+Industrie de l'habillement
+Industrie de la chaussure
+Industrie de la conserverie
+Industrie de la viande
+Industrie des fils et fibres artificielles et synthétiques
+Industrie des matériaux de construction et de la céramique
+Industrie du caoutchouc
+Industrie du cuir
+Industrie du papier et du carton
+Industrie du verre
+Industrie laitière
+Industrie pharmaceutique, santé, médical, cosmétique
+Industrie textile
+Parachimie
+Première transformation de l'acier
+Première transformation de métaux non ferreux
+Production de combustibles minéraux
+Production de minéraux divers
+Production de pétrole et de gaz naturel
+Production et distribution d'électricité
+Pétrochimie
+Sidérurgie
+Tertiaires et sociétés de services
+Transformation des matières plastiques
+Transformation du tabac
+Travail des métaux
+Travail du grain
+Travail mécanique du bois
