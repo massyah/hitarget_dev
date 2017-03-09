@@ -27,8 +27,6 @@ SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 SETTING = "PYANYWHERE"
 # SETTING = "DEBUG"
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1']
@@ -135,11 +133,17 @@ if SETTING == "DEBUG":
     STATIC_URL = '/static/'
     DEBUG = True
     print("Runing in DEBUG mode")
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
     pass
 
 elif SETTING == "PYANYWHERE":
     STATIC_URL = '/static/'
-    STATIC_ROOT = '/home/100doutes/hitarget_dev/static/'
+    STATIC_ROOT = '/home/100doutes/hitarget_dev/static/static/'
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = '/home/100doutes/hitarget_dev/static/media/'
+
 
 else:
     STATIC_URL = '/static/'
