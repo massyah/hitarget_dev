@@ -1,0 +1,23 @@
+{% extends "hitarget/base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+
+
+{% block headercontent %}
+Hello, {{ request.user | title }}
+{% endblock %}
+
+
+{% block maincontent %}
+<h2>Vos informations </h2>
+<form action="." method="post" enctype="multipart/form-data">
+                  {% bootstrap_form user_form %}
+                  {% bootstrap_form profile_form %}
+
+
+    {% csrf_token %}
+    <p><input type="submit" value="Enregistrer"></p>
+    ￼
+</form>
+{% endblock %}
+

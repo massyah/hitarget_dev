@@ -1,0 +1,30 @@
+{% extends "hitarget/base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block headercontent %}
+<h2>Connectez-vous...<br/> et rejoignez-nous !</h2><hr/>
+{% endblock %}
+
+
+
+{% block maincontent %}
+{% if form.errors %}
+       <p>
+   Oups, on ne parvient pas à trouver votre compte. Êtes-vous sûr de vos identifiants ?
+       </p>
+     {% else %}
+Connectez-vous ou <a href="{% url "register" %}">créez un compte</a>
+{% endif %}
+<form action="." method="post">
+              {% bootstrap_form form %}
+
+       {% csrf_token %}
+           <p>
+        <input type="hidden" name="next" value="{{ next }}" />
+        <input type="submit" class="btn btn-primary pull-right" value="Go!">
+
+     </form>
+
+   {% endblock %}
+

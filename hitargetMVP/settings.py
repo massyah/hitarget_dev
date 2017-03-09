@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+from django.core.urlresolvers import reverse_lazy
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,13 +27,21 @@ SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 # SETTING = "PYANYWHERE"
 SETTING = "DEBUG"
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 
 ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1']
+
+LOGIN_REDIRECT_URL = reverse_lazy("dashboard")
+LOGIN_URL = reverse_lazy("login")
+LOGOUT_URL = reverse_lazy("logout")
 
 # Application definition
 
 INSTALLED_APPS = [
     'hitarget',
+    'account',
     'bootstrap3',
     'crispy_forms',
     'django.contrib.admin',
@@ -82,6 +91,9 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+LANGUAGE_CODE = 'fr-FR'
+USE_L10N = True
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators

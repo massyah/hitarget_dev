@@ -110,7 +110,6 @@ class AddLeadForm(forms.ModelForm):
                                          "invalid": _("Email invalide, êtes vous-sûr de l'avoir bien renseigné?"),
                                      })
 
-
     description_full = forms.CharField(max_length=720,
                                        min_length=30, strip=True,
                                        # initial=_("Infrastructure d'impression laser"),
@@ -124,7 +123,7 @@ class AddLeadForm(forms.ModelForm):
                                        })
 
     class Meta:
-        fields = ['title', 'location', 'description_short', 'category','contact_name','contact_company','contact_phone_number','contact_email','description_full']
+        fields = ['title', 'location', 'description_short', 'category', 'contact_name', 'contact_company', 'contact_phone_number', 'contact_email', 'description_full']
         exclude = ['date_expired', 'slug',
                    'category_entity',
                    'location_entity',
@@ -139,18 +138,20 @@ class AddLeadForm(forms.ModelForm):
         instance = super(AddLeadForm, self).save(commit=False)
 
         max_length = Lead._meta.get_field('slug').max_length
-        instance.slug = orig = slugify(instance.title)[:max_length]
+        if not instance.slug:
+            print("generating new slug")
+            instance.slug = orig = slugify(instance.title)[:max_length]
+            for x in itertools.count(1):
+                if not Lead.objects.filter(slug=instance.slug).exists():
+                    break
 
-        for x in itertools.count(1):
-            if not Lead.objects.filter(slug=instance.slug).exists():
-                break
-
-            # Truncate the original slug dynamically. Minus 1 for the hyphen.
-            instance.slug = "%s-%d" % (orig[:max_length - len(str(x)) - 1], x)
+                # Truncate the original slug dynamically. Minus 1 for the hyphen.
+                instance.slug = "%s-%d" % (orig[:max_length - len(str(x)) - 1], x)
         # assign author to current logged in user
-        instance.author_id=1
+        # instance.author_id=1
         # compute expiration date
         instance.update_expiration_date()
-        instance.save()
+        if commit:
+            instance.save()
 
         return instance

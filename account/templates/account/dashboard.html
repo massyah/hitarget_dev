@@ -1,0 +1,21 @@
+{% extends "hitarget/base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+
+
+{% block headercontent %}
+Hello, {{ request.user | title }}
+{% endblock %}
+
+
+{% block maincontent %}
+<h2>Votre compte</h2>
+<ul>
+    <li><a href="{% url 'hitarget:add_lead' %}">Postez un nouveau lead</a></li>
+    <li><a href="{% url 'hitarget:my-leads' %}">Voir tous vos leads</a></li>
+    <li><a href="{% url 'password_change' %}">Changez-votre mot de passe</a></li>
+    <li><a href="{% url 'logout' %}">Vous déconnectez</a></li>
+    <li><a href="{% url 'edit' %}">Changez vos informations</a></li>
+</ul>
+{% endblock %}
+

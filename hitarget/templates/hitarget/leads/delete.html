@@ -3,17 +3,17 @@
 {% load bootstrap3 %}
 {% load static %}
 {% block headercontent %}
-<h1>Postez votre lead</h1>
+<h1>Supprimez le</h1>
 {% endblock %}
 
 {% block maincontent %}
 <div>
-    <form action="/leads/add" method="post">
-      {% bootstrap_form add_lead_form %}
+    <!--by default, the associated action view is the same as the rendering, but with data sent within the POST request-->
+    <form action="" method="POST">
         {% csrf_token %}
-
-    <p>                <button class="btn btn-default pull-left">Enregistrer</button>
-        <input type="submit" class="btn btn-primary pull-right" value="Publier!">
+        Êtes vous sûr ?
+    <p>
+        <input type="submit" class="btn btn-danger pull-right" value="Confirmer!">
 
     </form>
 </div>

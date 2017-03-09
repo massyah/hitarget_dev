@@ -1,0 +1,20 @@
+{% extends "hitarget/base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block customhead %}
+ <meta http-equiv="refresh" content="5; URL={% url 'hitarget:home' %}">
+{% endblock %}
+
+
+{% block headercontent %}
+Vous êtes désormais déconnecté...
+<h2>A bientôt sur HiTargets !</h2><hr/>
+{% endblock %}
+
+
+
+{% block maincontent %}
+
+{% endblock %}
+

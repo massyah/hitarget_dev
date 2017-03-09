@@ -1,6 +1,12 @@
 {% extends "hitarget/base.html" %}
 {% block headercontent %}
-<h1>Hello !</h1><hr/>
+{% if request.user.username != "" %}
+<h1>Hello {{ request.user | title }}!</h1><hr/>
+
+{% else %}
+<h1>Envie de voir comment c'est ?</h1><hr/>
+Pour tout le reste, c'est <a href="{% url 'login' %}">par ici</a>
+{% endif %}
 {% endblock %}
 
 

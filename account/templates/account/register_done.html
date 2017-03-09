@@ -1,0 +1,20 @@
+{% extends "hitarget/base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block customhead %}
+ <meta http-equiv="refresh" content="5; URL={% url 'login' %}">
+{% endblock %}
+
+
+{% block headercontent %}
+<h2>Bienvenu !</h2><hr/>
+{% endblock %}
+
+
+{% block maincontent %}
+
+     <h4>Bonjour {{ new_user.first_name }}!</h4>
+     <p>Votre compte est désormais créé, plus qu'a vous authentifier : <a
+   href="{% url "login" %}">Me connecter</a>.</p>
+{% endblock %}

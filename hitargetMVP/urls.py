@@ -15,11 +15,25 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
+    url(r'^account/', include(arg='account.urls'
+
+
+                            )),
     url(r'^leads/', include(arg='hitarget.urls',
                             namespace="hitarget",
                             app_name="hitarget",
                             ))
 ]
+
+# specific workaround to serve user images
+if settings.SETTING == "DEBUG":
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
+
