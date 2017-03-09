@@ -24,8 +24,8 @@ SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # SETTING = "PROD"
-# SETTING = "PYANYWHERE"
-SETTING = "DEBUG"
+SETTING = "PYANYWHERE"
+# SETTING = "DEBUG"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
