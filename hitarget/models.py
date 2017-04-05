@@ -14,6 +14,10 @@ from django.utils.translation import ugettext as _
 from data_management.models import Location
 
 
+class Location(models.Model):
+    pass
+
+
 class Category(models.Model):
     title = models.CharField(max_length=250)
 
