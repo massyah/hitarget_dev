@@ -25,7 +25,8 @@ SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 # SECURITY WARNING: don't run with debug turned on in production!
 # SETTING = "PROD"
 # SETTING = "PYANYWHERE"
-SETTING = "DEBUG"
+# SETTING = "DEBUG"
+SETTING = "OVHPROD"
 
 
 
@@ -176,6 +177,11 @@ elif SETTING == "PYANYWHERE":
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+elif SETTING == "OVHPROD":
+    # STATIC_URL = '/static/'
+    STATIC_ROOT = '/home/hayssam/hitarget_dev/static/static/'
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 else:
     STATIC_URL = '/static/'
