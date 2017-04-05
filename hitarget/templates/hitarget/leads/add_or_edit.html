@@ -10,20 +10,76 @@
 <div>
     <!--by default, the associated action view is the same as the rendering, but with data sent within the POST request-->
     <form action="" method="post">
-      {% bootstrap_form add_lead_form %}
-        {% csrf_token %}
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a data-toggle="pill" href="#public_info">Public</a></li>
+            <li role="presentation" class=""><a data-toggle="pill" href="#private_info">Privé</a></li>
+            <li role="presentation" class=""><a data-toggle="pill" href="#contact_info">Le contact</a></li>
+            <li role="presentation" class=""><a data-toggle="pill" href="#preview_submit">Go!</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="public_info" class="tab-pane fade in active">
+                <h4>Les infos visibles par tout le monde</h4>
+                Commençons par décrire simplement l'opportunité, rappelez-vous, ces infos doivent donner envie à vos collègues de se renseigner!
+                De plus, ces informations sont indexées par le moteur de recherche.
+                {% bootstrap_field add_lead_form.title %}
+                {% bootstrap_field add_lead_form.category %}
+                {% bootstrap_field add_lead_form.location %}
+                {% bootstrap_field add_lead_form.description_short %}
+                <button class="btn btn-default pull-right" id="btnNext1">Suivant</button>
+            </div>
+            <div id="private_info" class="tab-pane fade">
+                <h4>Les infos visibles après paiement</h4>
+                Là, vous pouvez décrire complètement l'opportunité
+                {% bootstrap_field add_lead_form.description_full%}
+                <button class="btn btn-default pull-left" id="btnBack1">Revenir</button>
+                <button class="btn btn-default pull-right" id="btnNext2">Suivant</button>
 
-    <p><button class="btn btn-default pull-left">Enregistrer</button>
-        <input type="submit" class="btn btn-primary pull-right" value="Publier!">
+            </div>
+
+             <div id="contact_info" class="tab-pane fade">
+                <h4>Qui est le contact ?</h4>
+                Là, vous pouvez décrire complètement l'opportunité
+                {% bootstrap_field add_lead_form.contact_name%}
+                {% bootstrap_field add_lead_form.contact_email%}
+                {% bootstrap_field add_lead_form.contact_phone_number%}
+                {% bootstrap_field add_lead_form.contact_company%}
+
+                <button class="btn btn-default pull-left" id="btnBack2">Revenir</button>
+                <button class="btn btn-default pull-right" id="btnNext3">Suivant</button>
+
+            </div>
+
+            <div id="preview_submit" class="tab-pane fade">
+                <h4>Résumé de vos infos</h4>
+                <p>Si c'est bon pour vous, alors c'est bon pour nous!</p>
+
+                <button class="btn btn-default pull-left">Enregistrer</button>
+                <input type="submit" class="btn btn-primary pull-right" value="Publier!">
+
+            </div>
+
+            {% csrf_token %}
+
+        </div>
 
     </form>
 </div>
 
-<!--<form action="/leads/add" method="post">-->
-<!--{{ add_lead_form.as_p }}-->
-<!--{% csrf_token %}-->
-<!--<p><input type="submit" value="Poster ce lead"></p>-->
-<!--</form>-->
-<!--</div>-->
+{% endblock %}
+
+{% block footercontent %}
+<script>
+
+$('#btnNext1,#btnNext2,#btnNext3').click(function(){
+  $('.nav-pills > .active').next('li').find('a').trigger('click');
+  return false;
+});
+
+$('#bntBack1,#bntBack2').click(function(){
+  $('.nav-pills > .active').previous('li').find('a').trigger('click');
+  return false;
+});
+
+</script>
 
 {% endblock %}

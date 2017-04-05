@@ -4,6 +4,7 @@ from django.template import loader
 import pprint as pp
 
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 from hitarget.hitarget_faker import fake_lead_add_form_data
 from .models import Lead
@@ -12,6 +13,14 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.utils.translation import ugettext as _
 
+
+# logger
+
+# import the logging library
+import logging
+
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 
@@ -173,4 +182,21 @@ def my_leads(request):
         request=request,
         template_name="hitarget/leads/my-leads.html",
         context={"leads": current_user_leads}
+    )
+
+
+@login_required
+@csrf_exempt
+def search_leads(request):
+    print("in search results")
+    if request.method=="GET":
+        print("Got GET request with params %s",request.GET)
+    if request.method=="POST":
+        print("Got POST request with params %s",request.POST)
+
+    leads_results = Lead.objects.all()[0:10]
+    return render(
+        request=request,
+        template_name="hitarget/leads/search_results.html",
+        context={"leads_results": leads_results}
     )

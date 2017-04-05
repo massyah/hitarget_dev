@@ -1,4 +1,5 @@
 import itertools
+
 import re
 
 from django import forms
@@ -70,8 +71,8 @@ class AddLeadForm(forms.ModelForm):
                                    help_text="",
                                    label=_("Comment s'appelle le contact ?"),
                                    error_messages={
-                                       "required": _("Décrivez-vous nous le nom de la personne à contacter"),
-                                       "min_length": _("Nom trop court, êtes vous-sûr de l'avoir bien renseigné?"),
+                                       "required": _("!! Décrivez-nous le nom de la personne à contacter"),
+                                       "min_length": _("!! Nom trop court, êtes vous-sûr de l'avoir bien renseigné?"),
                                    })
 
     contact_company = forms.CharField(max_length=120,
@@ -95,6 +96,7 @@ class AddLeadForm(forms.ModelForm):
                                            label=_("Son téléphone?"),
                                            error_messages={
                                                "required": _("Indiquez soit un e-mail soit un numéro de téléphone pour le contact"),
+                                               "min_length": _("Numéro trop court, êtes vous-sûr de l'avoir bien renseigné?"),
                                                "invalid": _("Numéro invalide, êtes vous-sûr de l'avoir bien renseigné?"),
                                            })
     contact_email = forms.EmailField(min_length=6,

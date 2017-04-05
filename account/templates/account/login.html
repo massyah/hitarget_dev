@@ -14,7 +14,7 @@
    Oups, on ne parvient pas à trouver votre compte. Êtes-vous sûr de vos identifiants ?
        </p>
      {% else %}
-Connectez-vous ou <a href="{% url "register" %}">créez un compte</a>
+<h4>Sinon, vous pouvez aussi <a href="{% url "register" %}">créer un compte</a></h4>
 {% endif %}
 <form action="." method="post">
               {% bootstrap_form form %}
@@ -25,6 +25,6 @@ Connectez-vous ou <a href="{% url "register" %}">créez un compte</a>
         <input type="submit" class="btn btn-primary pull-right" value="Go!">
 
      </form>
-
+<a href="#">Help, j'ai oublié mon mot de passe!</a>
    {% endblock %}
 

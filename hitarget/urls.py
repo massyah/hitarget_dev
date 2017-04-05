@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'add', views.add_lead, name='add_lead'),
     url(r'my-leads', views.my_leads, name='my-leads'),
     url(r'tips', views.tips, name='tips'),
+    url(r'search_leads', views.search_leads, name='search_leads'),
 
     url(r'(?P<slug>[-\w]+?)/full$', views.lead_detail_full, name='lead_detail_full'),
     url(r'(?P<slug>[-\w]+?)/$', views.lead_detail, name='lead_detail'),

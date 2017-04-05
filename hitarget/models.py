@@ -2,16 +2,19 @@ import datetime
 
 import random
 
+import itertools
 from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import User
 from django.shortcuts import render
+from django.template.defaultfilters import slugify
 from django.urls import reverse
 from django.utils import timezone
 from django.utils.translation import ugettext as _
 
-
 # Create your models here.
+from data_management.models import Location
+
 
 class Category(models.Model):
     title = models.CharField(max_length=250)
@@ -36,13 +39,6 @@ class Contact(models.Model):
 
     def __str__(self):
         return "%s (%s)" % (self.full_name, self.company)
-
-
-class Location(models.Model):
-    display_name = models.CharField(max_length=250)
-
-    def __str__(self):
-        return self.display_name
 
 
 class Card(models.Model):
@@ -142,8 +138,19 @@ class Lead(Card):
     def update_expiration_date(self):
         self.date_expired = self.date_publish + datetime.timedelta(days=self.EXPIRES_IN_DAYS[self.expires_in])
 
+    def generate_unique_slug(self):
+        max_length = Lead._meta.get_field('slug').max_length
+
+        self.slug = orig = slugify(self.title)[:max_length]
+        for x in itertools.count(1):
+            if not Lead.objects.filter(slug=self.slug).exists():
+                break
+
+            # Truncate the original slug dynamically. Minus 1 for the hyphen.
+            self.slug = "%s-%d" % (orig[:max_length - len(str(x)) - 1], x)
+
     def main_title(self):
-        return self.title.title()
+        return self.title.capitalize()
 
     def author_avatar(self):
         # return "/static/hitarget/assets/avatar_128.jpg"
@@ -170,7 +177,7 @@ class Lead(Card):
     def introductory_text(self):
         sample_text = """
         {author} vient de poster un nouveau lead dans le domaine {domain}, pour une société basé à {location}. Intéréssé ?
-        """.format(author=self.author.username, domain=self.category, location=self.location)
+        """.format(author=self.author.username.capitalize(), domain=self.category, location=self.location)
         return sample_text
 
     def description_short_text(self):

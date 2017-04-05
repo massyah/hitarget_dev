@@ -9,6 +9,7 @@ from django.contrib.auth import authenticate, login
 from account.models import Profile
 from .forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditForm
 from django.contrib.auth.decorators import login_required
+from django.utils.translation import ugettext as _
 
 
 def user_login(request):
@@ -21,6 +22,7 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
+                    messages.info(_("Vous voici connecté!"))
                     return HttpResponse('Authenticated successfully')
                 else:
                     return HttpResponse('Disabled account')

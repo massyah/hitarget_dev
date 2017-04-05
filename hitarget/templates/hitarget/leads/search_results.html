@@ -1,0 +1,27 @@
+{% extends "hitarget/base.html" %}
+{% block headercontent %}
+<h4> Voici vos 10 résultats</h4>
+{% endblock %}
+
+
+{% block maincontent %}
+<div class="row">
+
+    <table class="table">
+        {% for lead in leads_results %}
+        <tr>
+            <td>
+                <h5><a href="{{lead.get_absolute_url}}">{{lead.title|title | truncatewords:6}}</a>
+                    <br/> <small>posté par {{lead.author.username}} le {{lead.date_publish | date:"d M"}}</small></h5>
+                <div>
+                    {{lead.description_short | truncatewords:10}}
+                </div>
+            </td>
+            <!--# TODO si j'en suis l'auteur, l'afficher spcéficiquement -->
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+{% endblock %}
+

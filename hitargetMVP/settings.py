@@ -24,12 +24,32 @@ SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # SETTING = "PROD"
-SETTING = "PYANYWHERE"
-# SETTING = "DEBUG"
+# SETTING = "PYANYWHERE"
+SETTING = "DEBUG"
 
 
 
-ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1']
+# LOGGER setup
+import os
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        },
+    },
+}
+
+
+ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1','192.168.1.8']
 
 LOGIN_REDIRECT_URL = reverse_lazy("dashboard")
 LOGIN_URL = reverse_lazy("login")
@@ -38,10 +58,12 @@ LOGOUT_URL = reverse_lazy("logout")
 # Application definition
 
 INSTALLED_APPS = [
+    'data_management',
     'hitarget',
     'account',
     'bootstrap3',
     'crispy_forms',
+    'django.contrib.postgres',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,13 +104,17 @@ WSGI_APPLICATION = 'hitargetMVP.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'hitarget',
+        'USER': 'django_hitarget',
+        'PASSWORD': 'li8oph6aw8ulk7en6cyp7vak7ur3yet0bum6nom2cip3nird4y',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+
 
 LANGUAGE_CODE = 'fr-FR'
 USE_L10N = True
@@ -144,6 +170,12 @@ elif SETTING == "PYANYWHERE":
     MEDIA_URL = '/media/'
     MEDIA_ROOT = '/home/100doutes/hitarget_dev/static/media/'
 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 else:
     STATIC_URL = '/static/'
