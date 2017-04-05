@@ -178,7 +178,7 @@ elif SETTING == "PYANYWHERE":
         }
     }
 elif SETTING == "OVHPROD":
-    # STATIC_URL = '/static/'
+    STATIC_URL = '/static/'
     STATIC_ROOT = '/home/hayssam/hitarget_dev/static/static/'
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
