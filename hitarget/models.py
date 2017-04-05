@@ -1,18 +1,16 @@
-import datetime
+# -*- coding: utf-8 -*-
 
+import datetime
+import itertools
 import random
 
-import itertools
 from django.conf import settings
 from django.db import models
-from django.contrib.auth.models import User
-from django.shortcuts import render
 from django.template.defaultfilters import slugify
 from django.urls import reverse
 from django.utils import timezone
 from django.utils.translation import ugettext as _
 
-# Create your models here.
 from data_management.models import Location
 
 
