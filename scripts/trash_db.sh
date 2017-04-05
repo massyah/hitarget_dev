@@ -1,3 +1,4 @@
+
 python manage.py migrate account zero
 python manage.py migrate data_management zero
 python manage.py migrate hitarget zero
