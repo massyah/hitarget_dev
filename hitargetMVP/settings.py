@@ -50,7 +50,7 @@ LOGGING = {
 }
 
 
-ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1','192.168.1.8']
+ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1','192.168.1.8','217.182.205.214']
 
 LOGIN_REDIRECT_URL = reverse_lazy("dashboard")
 LOGIN_URL = reverse_lazy("login")
