@@ -28,8 +28,6 @@ SECRET_KEY = '!x)ed^v_9v^bx^us0ac*6fk(edxi(vplyd54++yg84ds@if4uo'
 # SETTING = "DEBUG"
 SETTING = "OVHPROD"
 
-
-
 # LOGGER setup
 import os
 
@@ -49,8 +47,7 @@ LOGGING = {
     },
 }
 
-
-ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1','192.168.1.8','217.182.205.214']
+ALLOWED_HOSTS = ['100doutes.pythonanywhere.com', '127.0.0.1', '192.168.1.8', '217.182.205.214']
 
 LOGIN_REDIRECT_URL = reverse_lazy("dashboard")
 LOGIN_URL = reverse_lazy("login")
@@ -115,7 +112,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 
 LANGUAGE_CODE = 'fr-FR'
 USE_L10N = True
